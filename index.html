@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Encriptador de texto
+            
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header >
+            <div class="logo">
+                <h1><img src="img/A.png" alt="logo"></h1>
+            </div>
+        </header>
+        <main class="main">
+            <section class="ingresa-mensaje">
+            <textarea type="text" id="texto-encriptado" class="texto-texto" required placeholder="Ingrese el texto aqui"></textarea>
+            <h3 class="texto-indicativo"><i id="emoticon" class="bi bi-exclamation-circle-fill"></i>Solo letras minúsculas y sin acentos</h3>
+            <div class="btn">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+        <section class="campo-mensaje">
+            
+            <textarea  id="campo-mensaje" class="mensaje" disabled>
+            </textarea>
+            <div class="textopredeterminado" id="textopredeterminado">
+                <p class="primertexto">Ningún mensaje fue encontrado</p>
+                <p class="segundotexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="btnCopiar" id="btnCopiar">
+            <button class="copiar"  onclick="btnCopiar()">Copiar</button>
+           </div>
+           
+        </section>
+
+        </main>
+        <script src="app.js"> </script>
+    </body>
+
+</html>

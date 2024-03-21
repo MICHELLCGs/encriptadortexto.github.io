@@ -1,0 +1,177 @@
+body{
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+.logo{
+    padding: 40px 0 0 60px;
+}
+.main{
+    width: 100%;
+}
+.ingresa-mensaje .texto-texto{
+    width: 600px;
+    height: 480px;
+    border:none;
+    background: #F3F5FC;
+    font-size: 32px;
+    resize: none;
+    color:#0A3871;
+}
+
+.ingresa-mensaje .texto-texto::placeholder{
+    color:#0A3871;
+    font-size: 32px;
+}
+.ingresa-mensaje .texto-texto:focus{
+    outline: none;
+    width: 600px;
+    height: 480px;
+    resize: none;
+}
+
+.btn button{
+    border-radius: 24px;
+    border:1px solid #0A3871;
+    height: 67px;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    margin:0 24px 0 0 ;
+    cursor: pointer;
+
+}
+.btnDesencriptar{
+    background: #0a38713d;
+    color:#0A3871;
+}
+.btnEncriptar{
+    background: #0A3871;
+    color:#ffffff;
+}
+.ingresa-mensaje{
+    display: inline-block;
+    vertical-align: top;
+    width: 54%;
+    margin: 35px 0 0 160px;
+}
+.campo-mensaje {
+    display: inline-block;
+    margin: 0;
+    height: 628px;
+    border-radius: 11px;
+    background:#ffffff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.216);
+}
+.mensaje{
+    height: 85%;
+    resize: none;
+    margin: 5px auto 2px auto;
+    font-size: 32px;
+    display: block;
+    border:none;
+    padding: 4px 0px 0px 0px;
+    border-radius: 10px;
+    background:url(img/Muñeco.png) no-repeat center;
+    height:460px;
+}
+.mensaje:focus{
+    outline: none;
+}
+.texto-indicativo{
+    margin:10px 0;
+    color: #495057;
+   
+}
+#emoticon{
+margin: 0 5px 0 0;
+}
+.copiar{
+    border-radius: 24px;
+    border:1px solid #0A3871;
+    height: 67px;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    color:#0A3871;
+    margin: 5px 53px;
+    cursor: pointer;
+}
+.textopredeterminado{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+.textopredeterminado .primertexto{
+    font-weight: bold;
+    font-size: 24px;
+    color: #343A40;
+    margin:0 0 10px 0;
+}
+.textopredeterminado .segundotexto{
+    color:#495057;
+    margin:0 0 10px 0;
+}
+@media screen and (max-width: 1204px){
+    .btn button {
+        font-size: 120%;
+        width: 44%;
+        margin: 4px auto;
+    }
+    .campo-mensaje{
+        margin:auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 1004px){
+    .btn button {
+        font-size: 120%;
+        width: 44%;
+        margin: 10px auto;
+    }
+    .campo-mensaje{
+        margin:auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .mensaje {
+        background: none; 
+    }
+}
+@media screen and (max-width: 768px){
+    .btn button{
+        width: 100%;
+        margin: 4px auto;
+    }
+    .texto-texto::placeholder{
+        color:#0A3871;
+        width: 100%;
+    }
+    .ingresa-mensaje{
+        margin: 10% 10% 2% 30%;
+    }
+    .ingresa-mensaje .texto-texto{
+        width: 100%;
+       
+    }
+    .ingresa-mensaje .texto-texto:focus{
+        outline: none;
+        width: 100%;
+        resize: none;
+    }
+    .campo-mensaje{
+        margin: 10px auto;
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
+    .mensaje{
+        width: 80%;
+    }
+    .textopredeterminado{
+        margin:-10% auto 10% auto;
+    }
+}
